@@ -109,6 +109,7 @@
 	 * @param {String}/{Boolean} link - a click to buy link href
 	 */
 	var makeTag = function(num,direction,link_name,value_x,value_y,link){
+		console.log(num,direction,link_name,value_x,value_y,link)
 		if(num=="single"){
 			var tagItemTmp = "<div class='tag_container' style='position:absolute;left:l_leftpx;top:t_toppx' x=_value_x y=_value_y >"+
 								"<div class='anchor'></div>"+
@@ -138,16 +139,14 @@
 		}
 		return tagItemTmp;
 	}
-
 	/**
 	 * Function: formatTags
 	 * Usage: formatTags(umedia,cWidth,cHeight)
 	 * ----------------------------------------
 	 * umedia: data(DOM) fetched from the user media API 
-	 * @param cWidth: img Container Width 
-	 * @param cHeight: img Container Height
+	 * @param {cWidth}: img Container Width 
+	 * @param {cHeight}: img Container Height
 	 */
-
 	T.formatTags=function(tags,cWidth,cHeight){
 		var tags_arr=[]
 		for (i in tags){
@@ -158,21 +157,20 @@
 			var dname = tags[i].tag_name
 			if(tag_pos_1==="1"){
 				if(tag_pos_2==0||tag_pos_2==2){
-					var tags = makeTag("single","right",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("single","right",dname,x*cWidth,y*cHeight,"")
 				}else{
-					var tags = makeTag("single","left",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("single","left",dname,x*cWidth,y*cHeight,"")
 				}
 			}else{
 				if(tag_pos_2==0||tag_pos_2==2){
-					var tags = makeTag("double","right",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("double","right",dname,x*cWidth,y*cHeight,"")
 				}else{
-					var tags = makeTag("double","left",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("double","left",dname,x*cWidth,y*cHeight,"")
 				}
 			}
-			tags_arr.push(tags)
+			tags_arr.push(tag)
 		}
 		var tags_stream= tags_arr.join("")
 		return tags_stream;
 	}
-
 }.call(this));
