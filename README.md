@@ -1,4 +1,4 @@
-## a Img Tags
+## Tags
 ###一个简单的用于给图片打tag的JS插件
 ####正在完善中....
 <a href="http://dejun-github-tag.oss-cn-qingdao.aliyuncs.com/">Demo</a>
