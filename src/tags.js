@@ -129,7 +129,7 @@
 								.replace(/_value_y/g,value_y)
 								.replace(/_direction/g,direction)
 								.replace(/_link_name/g,link_name)
-								.replace(/_buy/g,"this is a link")
+								.replace(/_buy/g,"这是一个标签")
 								.replace(/l_left/g,value_x)
 								.replace(/t_top/g,value_y)
 		if(link){

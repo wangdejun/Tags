@@ -1,4 +1,3 @@
-
 @keyframes tags_scale{
 	00%{
 		opacity: 0;
@@ -8,9 +7,9 @@
 	2%{
 		opacity: 1
 	}
-	50%{
+	80%{
 		opacity: 0.2;
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(2);
 		transform: scale(1);
 		background-color:#fff
 	}
@@ -31,9 +30,9 @@
 	2%{
 		opacity: 1;
 	}
-	50%{
+	80%{
 		opacity: 0.2;
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(2);
 		transform: scale(1);
 		background-color:#fff
 	}
@@ -47,13 +46,18 @@
 
 .anchor_edge{
 	display: block;
-	animation: tags_scale 1.2s 1s linear infinite;
-	width:26px;height:26px;
-	background-color:rgba(255,255,255,0.8);
-	margin-right:5px;
-	border-radius:50%;
-	z-index:10;
-	opacity: 0.5;
+    animation: tags_scale 1s 1s linear infinite;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(255,255,255,0.8);
+    margin-right: 5px;
+    border-radius: 50%;
+    z-index: 10;
+    opacity: 0.5;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform: translate(-50%,-50%);
 }
 .anchor{
     display: block;
@@ -67,8 +71,6 @@
     z-index: 11;
     transform: translate(-50%,-50%);
 }
-
-
 .tag_name_single_left,
 .tag_name_single_right,
 .tag_name_double_left,
@@ -97,8 +99,8 @@
 }
 .tag_name_double_right{    
 	padding: 0px 5px 0px 10px;
-	top: -32px;
-    left: 37px;
+    top: -23px;
+    left: 38px;
 }
 .tag_name_double_left{
     padding: 0px 10px 0px 5px;
@@ -123,17 +125,17 @@
 }
 
 .link_right{
-	color:#fff;
-	font-size:13px;
-	position: absolute;
+	color: #fff;
+    font-size: 13px;
+    position: absolute;
     border-bottom: 1px solid #fff;
     white-space: nowrap;
     font-family: Lato, sans-serif;
     text-shadow: 1px 1px 5px #000,0px 0px 5px #000,0px 0px 5px #000;
     width: auto;
-	padding: 0px 5px 0px 10px;	
-	left: 37.5px;
-    top: 13.5px;
+    padding: 0px 5px 0px 10px;
+    left: 37.5px;
+    top: 23.5px;
 }
 .tree_left{
     width: 33px;

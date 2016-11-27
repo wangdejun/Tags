@@ -1,8 +1,9 @@
 <html>
     <head>
         <meta name="tags" content="a simple tools to add tags to imgs">
+        <meta charset="utf-8">
         <title>Tags</title>
-        <link type="text/css" href="./css/tags.css">
+        <link rel="stylesheet" href="./css/tags.css">
         <script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
         <style>
             #img-container{
@@ -22,6 +23,7 @@
                 border:2px solid #aaa;
                 margin-bottom:10px;
                 padding:0px 10px 0px 10px;
+                box-sizing:border-box;
             }
             .img-item img{
                 max-width: 100%;
@@ -35,13 +37,12 @@
         
         <div class="title"><h1>Tags</h1></div>
         <div id="img-container">
-            <div class ="img-item">
-                <img src="./img/1_mountain.jpg" alt="#">
-                
+            <div class ="img-item img-item-1">
+                <img src="./img/2_leaf_min.jpg" alt="#">
             </div>
-            <div class ="img-item">
-                <img src="./img/2_leaf.jpg" alt="#">
-            </div>
+            <!--<div class ="img-item img-item-2">
+                <img src="./img/1_mountain_min.jpg" alt="#">
+            </div>-->
         </div>
 
     </body>
@@ -49,7 +50,9 @@
     <script src="./src/data.js"></script>
     <script src="./src/tags.js"></script>
     <script>
-        alert($(".title"))
-    
+        //alert($(".title"))
+        $(".img-item-1").append(T.formatTags(data,1000,800));
+        //$(".img-item").append(T.formatTags(data,$(".img-item-1").clientWidth,$(".img-item-2").clientHeight));
+        
     </script>
 </html>

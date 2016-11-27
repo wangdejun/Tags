@@ -1,20 +1,31 @@
 data=[
     {
-        designer_name:"LOEWE",
-        keywords:"bags",
+        tag_name:"标签序号1",
         link:null,
         position:20,
-        product:{liked: 0, durl: "LOEWE", stores: 0},
-        x:0.6237,
-        y:0.8809,
+        x:0.62,
+        y:0.88,
     },
     {
-        designer_name:"J.W.ANDERSON",
-        keywords:"Dresses",
+        tag_name:"标签序号2",
         link:null,
         position:20,
-        product:{liked: 0, durl: "J.W.ANDERSON", stores: 1},
-        x:0.5401,
-        y:0.3226,
+        x:0.54,
+        y:0.32,
+    },    
+    {
+        tag_name:"这是一个中间的标签",
+        link:null,
+        position:20,
+        x:0.75,
+        y:0.67,
+    },
+    {
+        tag_name:"这是一个中间的标签",
+        link:null,
+        position:20,
+        x:0.7,
+        y:0.4,
     }
+
 ]
