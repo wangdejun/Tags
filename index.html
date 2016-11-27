@@ -2,24 +2,55 @@
     <head>
         <meta name="tags" content="a simple tools to add tags to imgs">
         <title>Tags</title>
-        <link rel="" type="text/css" href="/css/tags.css">
+        <link rel="" type="text/css" href="./css/tags.css">
         <link rel="stylesheet" href="http://libs.baidu.com/jquery/1.11.1/jquery.min.js">
+        
+        
         <style>
             #img-container{
                 width:1000px;
                 margin:auto;
                 height:auto;
             }
+            .title{
+                text-align: center;
+            }
+            .img-item{
+                width:1000px;
+                height:800px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:2px solid #aaa;
+                margin-bottom:10px;
+                padding:0px 10px 0px 10px;
+            }
+            .img-item img{
+                max-width: 100%;
+                max-height:100%;
+                min-width:auto;
+                min-height:auto;
+            }
         </style>
     </head>
     <body>
-        <div><h1>Tags</h1></div>
-        <div id = "img-container">
+        
+        <div class="title"><h1>Tags</h1></div>
+        <div id="img-container">
             <div class ="img-item">
-                <img src="./imgs1.jpg" alt="#">
+                <img src="./img/1_mountain.jpg" alt="#">
+            </div>
+            <div class ="img-item">
+                <img src="./img/2_leaf.jpg" alt="#">
             </div>
         </div>
+
     </body>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>-->
+    <script src="./src/data.js"></script>
+    <script src="./src/tags.js"></script>
     <script>
+    console.log("_")
+    
     </script>
 </html>
