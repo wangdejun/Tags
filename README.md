@@ -1,5 +1,6 @@
 ## a Img Tags
 ###一个简单的用于给图片打tag的JS插件
+<a href="http://dejun-github-tag.oss-cn-qingdao.aliyuncs.com/">Demo</a>
 ####可选参数
 <li>direction</li>
 <li>tag_name</li>
