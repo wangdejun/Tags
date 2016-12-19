@@ -14,7 +14,6 @@
   	} else {
 		root.T = T;
   	}
-
 	T.VERSION = '0.0.1';
 	/**
 	 * Function makeTag
