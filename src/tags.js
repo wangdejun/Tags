@@ -50,11 +50,11 @@
 								.replace(/_link_name/g,link_name)
 								.replace(/_buy/g,"这是一个标签")
 								.replace(/l_left/g,value_x)
-								.replace(/t_top/g,value_y)
+								.replace(/t_top/g,value_y);
 		if(link){
-			tagItemTmp = tagItemTmp.replace("_href","href='"+link+"' target='_blank'")
+			tagItemTmp = tagItemTmp.replace("_href","href='"+link+"' target='_blank'");
 		}else{
-			tagItemTmp = tagItemTmp.replace("_href","")
+			tagItemTmp = tagItemTmp.replace("_href","");
 		}
 		return tagItemTmp;
 	}
@@ -69,27 +69,27 @@
 	T.formatTags=function(tags,cWidth,cHeight){
 		var tags_arr=[]
 		for (i in tags){
-			var tag_pos_1 =String(tags[i].position).split("")[0]
-			var tag_pos_2 =String(tags[i].position).split("")[1]
-			var x = tags[i].x
-			var y = tags[i].y
-			var dname = tags[i].tag_name
+			var tag_pos_1 =String(tags[i].position).split("")[0];
+			var tag_pos_2 =String(tags[i].position).split("")[1];
+			var x = tags[i].x;
+			var y = tags[i].y;
+			var dname = tags[i].tag_name;
 			if(tag_pos_1==="1"){
 				if(tag_pos_2==0||tag_pos_2==2){
-					var tag = makeTag("single","right",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("single","right",dname,x*cWidth,y*cHeight,"");
 				}else{
-					var tag = makeTag("single","left",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("single","left",dname,x*cWidth,y*cHeight,"");
 				}
 			}else{
 				if(tag_pos_2==0||tag_pos_2==2){
-					var tag = makeTag("double","right",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("double","right",dname,x*cWidth,y*cHeight,"");
 				}else{
-					var tag = makeTag("double","left",dname,x*cWidth,y*cHeight,"")
+					var tag = makeTag("double","left",dname,x*cWidth,y*cHeight,"");
 				}
 			}
-			tags_arr.push(tag)
+			tags_arr.push(tag);
 		}
-		var tags_stream= tags_arr.join("")
+		var tags_stream= tags_arr.join("");
 		return tags_stream;
 	}
 }.call(this));
