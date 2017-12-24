@@ -34,7 +34,7 @@
 								"<div class='anchor'></div>"+
 								"<div class='anchor_edge'></div>"+
 								"<div class='tag_name_single__direction' _href>_link_name</div>"+
-							"</div>"
+							"</div>";
 		}else{
 			var tagItemTmp = "<div class='tag_container' style='position:absolute;left:l_leftpx;top:t_toppx' x=_value_x y=_value_y >"+
 								"<div class='anchor'></div>"+
@@ -42,7 +42,7 @@
 								"<div class='tree__direction'></div>"+
 								"<div class='link__direction'>"+"_buy"+"</div>"+
 								"<div class='tag_name_double__direction' _href>_link_name</div>"+
-							"</div>"
+							"</div>";
 		}
 		tagItemTmp = tagItemTmp.replace(/_value_x/g,value_x)
 								.replace(/_value_y/g,value_y)
