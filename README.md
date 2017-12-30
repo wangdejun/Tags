@@ -6,7 +6,7 @@
 <img src="./img/snap.jpg"/>
 
 
-### parameter(must)
+#### parameter(must)
 
 * `x` {Number} a number range from 0 to 1
 * `y` {Number} a number range from 0 to 1
