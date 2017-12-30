@@ -1,6 +1,7 @@
 ## Tags
-a very simple plugin which canbe used to pin a tag(including jump link or displayed name) on a background(e.g. a photo or a normal div block)
-<a href="http://dejun-github-tag.oss-cn-qingdao.aliyuncs.com/">Demo</a>
+* a very simple plugin which canbe used to pin a tag(including jump link or displayed name) on a background(e.g. a photo or a normal div block)
+
+* <a href="http://dejun-github-tag.oss-cn-qingdao.aliyuncs.com/">Demo</a>
 
 <img src="./img/snap.jpg"/>
 
